@@ -1,0 +1,50 @@
+6 ?- consult(['c:/Users/96655/iCloudDrive/collge/prolog/lab3.pl']).
+true.
+
+7 ?- female(reema).
+true.
+
+8 ?- male(abdullah).
+true.
+
+9 ?- male(malak).
+false.
+
+10 ?- female(zaid).
+false.
+
+11 ?- parent(abdullah,reema).
+true.
+
+12 ?- parent(zaid,ragad).
+true.
+
+13 ?- parent(zaid, hassa).
+false.
+
+14 ?- parent(malak,shaikhah).
+false.
+
+15 ?- mother(shaikhah, reema).
+true.
+
+16 ?- mother(abdullah, malak).
+false.
+
+17 ?- father(zaid, ragad).
+true.
+
+18 ?- father(hassa, zaid).
+false.
+
+19 ?- sister(malak,reema).
+true .
+
+20 ?- sister(mohammad, malak).
+false.
+
+21 ?- brother(mohammad,reema).
+true .
+
+22 ?- brother(reema,malak).
+false.
