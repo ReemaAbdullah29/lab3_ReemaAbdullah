@@ -1,0 +1,57 @@
+lab4_task1: 
+
+
+29 ?- house = house.
+true.
+
+(unify because exactly same)
+
+29 ?- house = abc.
+false.
+
+(cannot unify because different atoms)
+
+30 ?- edge(a,b) = edge(C,b).
+C = a.
+
+(The structures match, b = b and the variable C is assigned to a)
+
+31 ?- edge(a,b) = edge(C,B).
+C = a,
+B = b.
+
+(The structures match, the variables are assigned the corresponding values)
+
+32 ?- edge(C,B) = edge(a,d).
+C = a,
+B = d.
+
+(The structures match, the variables are assigned the corresponding values)
+
+
+33 ?- edge(A,f(g,h)) = edge(a,B).
+A = a,
+B = f(g, h).
+
+(both arguments unify) 
+
+34 ?- edge(A,A) = edge(b,c).
+false.
+
+(Variable A must have the same value and b doesn't equal to c)
+
+35 ?- edge(A,A) = edge(b,b).
+A = b.
+
+(both occurrences of A are b so its unify)
+
+36 ?- A = B, B = f.
+A = B, B = f.
+
+(A and B become the same term, then B is unified with f. both refer to f)
+
+37 ?- A = B, B = f, A = e.
+false.
+
+(A and B become the same term, because B = f, A is also f, it cannot be e)
+

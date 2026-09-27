@@ -1,0 +1,27 @@
+task 2: 
+
+
+44 ?- consult(['c:/Users/96655/iCloudDrive/collge/prolog/Lab04_family_facts.pl']).
+true.
+
+45 ?- female(X).
+X = sara ;
+X = nora.
+
+46 ?- male(_).
+true .
+
+47 ?- parent(X,Y), parent(Y, faisal).
+X = ali,
+Y = muhammad .
+
+48 ?- parent(ahmad, X), female(X).
+X = sara ;
+X = nora ;
+false.
+
+49 ?- parent(X, ahmad), parent(X, muhammad).
+X = ali.
+
+50 ?- parent(ahmad, khan), parent(ahmad, nora), male(khan).
+true.
